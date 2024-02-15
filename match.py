@@ -73,3 +73,15 @@ def fib(n):
 fib(13000)
 # To do the fibonacci serie but now give me the position and program return the number in it position.
 # def fib0(n):
+def fib1(n):
+    if n == 0:
+        return n
+    if n == 1:
+        return n
+    a, b = 0, 1
+    for num in range(n):
+        a, b = b, a + b
+    return a
+
+print(fib1(x))
+
